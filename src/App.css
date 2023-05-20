@@ -58,7 +58,7 @@ a{
 .cta-btn{
   background-color: orange;
   padding: .7rem ;
-  border: 1px solid black;
+  border: 1.5px solid black;
   border-radius: 10px;
   margin-left: 4rem;
   margin-top:2rem;
@@ -79,6 +79,20 @@ a{
   .cta-btn{
     margin-left: .1rem;
     width: 20%;
+    text-align: center;
+    font-weight:200;
+  }
+}
+@media(max-width:677px) {
+  .cta-text h1{
+    text-align: center;
+    width:100%;
+    font-size:2.6rem;
+    margin-left: .1rem;
+  }
+  .cta-btn{
+    text-align: center;
+    font-weight:500;
   }
 }
 @media (max-width:375px) {
@@ -93,6 +107,7 @@ a{
     font-size: .7rem;
   }
   .cta-btn{
-
+    text-align: center;
+    font-weight:500;
   }
 }
