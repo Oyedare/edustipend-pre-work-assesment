@@ -63,10 +63,14 @@ a{
   margin-left: 4rem;
   margin-top:2rem;
   font-weight: 500;
-  width:10%;
+  cursor: pointer;
   text-align: center;
 }
+
 @media(max-width:726px){
+  .cta{
+    width: 100%;
+  }
   .cta-text h1{
     text-align: center;
     width:100%;
@@ -83,31 +87,39 @@ a{
     font-weight:200;
   }
 }
-@media(max-width:677px) {
+@media(max-width:426px) {
+  .cta{
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+  }
+
   .cta-text h1{
     text-align: center;
     width:100%;
-    font-size:2.6rem;
+    font-size:3rem;
     margin-left: .1rem;
+    /* margin-top: 5rem */
+  }
+
+  .cta p{
+    text-align: center;
   }
   .cta-btn{
     text-align: center;
-    font-weight:500;
+    width: 6rem;
+    margin: auto;
+    /* padding: .1rem 1.5rem; */
+    font-size: 1rem;
   }
 }
-@media (max-width:375px) {
+
+@media(max-width:376px) {
+  .cta{
+    gap: 2.5rem;
+  }
+
   .cta-text h1{
-    width:100%;
-    font-size: 1.2rem;
-    margin-left: .1rem;
-  }
-  .cta-text p{
-    margin-left: .1rem;
-    width:100%;
-    font-size: .7rem;
-  }
-  .cta-btn{
-    text-align: center;
-    font-weight:500;
-  }
+    font-size: 3.5rem;
+}
 }
